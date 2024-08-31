@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+everything = "6uDM19WhUJSSG57h2hnD4HKSc6e9SbqgggHaE6ij4etK"
+
+[programs.devnet]
+everything = "6uDM19WhUJSSG57h2hnD4HKSc6e9SbqgggHaE6ij4etK"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = "/Users/fox/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
